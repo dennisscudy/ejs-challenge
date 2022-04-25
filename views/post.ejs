@@ -1,0 +1,10 @@
+<%- include partials/header.ejs ; %>
+
+<% posts.forEach(function(post){ %>
+<% if (post.title === storedTitle) { %>
+<h1> <%= post.title %> </h1>
+<p> <%= post.content %> </p>
+<% }; %>
+<% }); %>
+
+<%- include partials/footer.ejs %>
